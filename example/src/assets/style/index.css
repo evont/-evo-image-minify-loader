@@ -1,0 +1,14 @@
+#app {
+  background: url(@assets/image/photo1.jpeg) no-repeat center/420px, url(@assets/image/photo2.jpeg) no-repeat center/340px;
+}
+
+#app2 {
+  background: url(@assets/image/Meditation.png) no-repeat center/420px;
+}
+
+#app3 {
+  background-image: url(@assets/image/Agreements.png);
+  background-size: contain;
+  background-position: center;
+  background-color: #ccc;
+}
