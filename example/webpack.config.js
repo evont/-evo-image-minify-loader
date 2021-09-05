@@ -10,12 +10,18 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     publicPath: "./"
   },
+  // resolveLoader: {
+  //   alias: {
+  //     'webp-convert-loader': path.resolve(__dirname, '../../')
+  //   }
+  // },
   resolve: {
     alias: {
       "@assets": path.resolve("./src/assets"),
       "@": path.resolve("./src"),
       _$: path.resolve("./src"),
     },
+
   },
   // watch: true,
   stats: "minimal",
@@ -26,7 +32,12 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader",
-          "webp-convert-loader"
+          {
+            loader: "webp-convert-loader",
+            options: {
+              outputPath: "@assets/webp",
+            }
+          }
         ],
       }
     ],
