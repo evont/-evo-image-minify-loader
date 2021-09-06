@@ -7,7 +7,7 @@
 }
 
 #app3 {
-  background-image: url(@assets/image/Agreements.png);
+  background-image: url(@assets/image/Agreements.png), url(@assets/image/Video_Conference.png);
   background-size: contain, 1200px;
   background-position: center;
   background-color: #ccc;
